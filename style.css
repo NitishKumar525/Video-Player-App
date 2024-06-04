@@ -1,0 +1,166 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #625f67;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23e71d1d' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.fa-solid{
+    color: #fff;
+    font-size: 25px;
+}
+
+
+.player-container{
+    max-width: 50vw;
+    min-width: 800px;
+    border: 5px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+video{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.controls-container{
+    height: 15%;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.control-box{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.545);
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in 1s;
+}
+
+
+.controls-container .control-box:hover{
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+
+
+.progress{
+    margin: auto;
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    transition: height 0.1s ease-in;
+    background-color: #fff;
+}
+
+
+.progress:hover{
+    transition: height 0.1s ease-in;
+    height: 7px;
+}
+
+.progress-bar{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+
+.controls-group{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.left-controls, .right-controls{
+    display: flex;
+    align-items: center;
+}
+
+.left-controls{
+    margin-left: 10px;
+}
+
+.play{
+    margin-right: 15px;
+}
+
+
+.fa-solid:hover{
+    color: red;
+}
+
+
+.volume-container{
+    display: flex;
+    align-items: center;
+
+}
+
+.volume{
+    height: 0.3rem;
+    width: 4.5rem;
+    background-color: #fff;
+    margin-left: 10px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+
+.volume-bar:hover{
+    background-color: red;
+}
+
+
+.volume-bar{
+    width: 50%;
+    height: 100%;
+}
+
+.right-controls{
+    margin-left: 10px;
+}
+
+
+.speed-container{
+    margin-right: 20px;
+}
+
+.select{
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+select > option{
+    background-color: #2d2c30b8;
+}
+
+.time-container{
+    margin-right: 20px;
+    color: #fff;
+    font-weight: bold;
+    user-select: none;
+}
