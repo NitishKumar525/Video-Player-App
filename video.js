@@ -8,7 +8,7 @@ const playerSpeed = document.querySelector(".player-speed");
 const fullscreen = document.getElementById("fullScreen-btn");
 const volumeContainer = document.querySelector(".volume");
 const volumeBar = document.querySelector(".volume-bar");
-const volBtn = document.getElementById("volume-btn");\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const volBtn = document.getElementById("volume-btn");\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 function fnMute() {
   if (videoPlayer.volume) {
