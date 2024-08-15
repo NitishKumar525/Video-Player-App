@@ -1,6 +1,6 @@
 const videoPlayer = document.querySelector("video");
 const playBtn = document.getElementById("play-btn");
-const progressContainer = document.querySelector(".progress");/////////////////
+const progressContainer = document.querySelector(".progress");//////////
 const progressBar = document.querySelector(".progress-bar");
 const currTime = document.querySelector(".current-time");
 const totalTime = document.querySelector(".total-time");
