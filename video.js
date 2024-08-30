@@ -1,4 +1,4 @@
-const videoPlayer = document.querySelector("video");?????????
+const videoPlayer = document.querySelector("video");?????
 const playBtn = document.getElementById("play-btn");
 const progressContainer = document.querySelector(".progress");
 const progressBar = document.querySelector(".progress-bar");
